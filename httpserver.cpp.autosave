@@ -1,0 +1,66 @@
+#include "httpserver.h"
+#include <QTcpSocket>
+#include <QHttpRequestHeader>
+
+HttpServer::HttpServer(QObject *parent) :
+	QTcpServer(parent)
+{
+	if (listen())
+		qDebug() << "HttpServer listening on port" << serverPort();
+	else
+		qDebug() << "HttpServer listening failed";
+
+	connect(&m_socket, SIGNAL(readyRead()), this, readData());
+}
+
+void HttpServer::incomingConnection(int handle)
+{
+	m_socket = m_http->nextPendingConnection();
+}
+
+void HttpServer::readData()
+{
+	QByteArray ba = m_socket->readAll();
+	buffer = buffer + ba;
+	int eoh = buffer.indexOf("\r\n\r\n");
+	if (eoh > 0)
+	{
+		if (ba[0] == 'G')
+		{
+			buffer = buffer.mid(eoh+4);
+		} else if (ba[0] == 'P') {
+			QHttpRequestHeader header(QString(buffer.left(eoh+4)));
+			QByteArray data = buffer = buffer.mid(eoh+4, header.contentLength());
+			// MouseEvent: (Type, GlobalX, GlobalY, Button, Buttons, KeyboardModifiers);
+			// KeyEvent (Type, Key, KeyboardModifiers);
+
+			while(data.length())
+			{
+				int nl = data.indexOf("\r\n");
+				QByteArray line;
+				if (nl > 0)
+				{
+					line = data.left(nl);
+					data = data.mid(nl+2);
+				} else if (nl==-1) {
+					line = data;
+					data.empty();
+				}
+				QList<QByteArray> params = data.split(' ');
+				if (params.length())
+				{
+					int eventType = params[0].toInt();
+					switch (QEvent::KeyPress)
+					{
+						case: QEvent::KeyPress: break
+					}
+				}
+
+			}
+
+
+		}
+
+	}
+}
+

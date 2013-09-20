@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<HTML><BODY onLoad="draw()"><CANVAS id="qt" width="1024" height="768"></BODY></HTML>
+<SCRIPT LANGUAGE="JavaScript">
+function draw()
+{
+	var canvas = document.getElementById("qt");
+	var context = canvas.getContext('2d');
+	context.shadowBlur=0;
+	context.fillStyle = "#d4d0c8";
+	context.fillRect(0, 0, 400, 300);
+
+	context.save()
+/* updatePen(): width:0 style:0 color:#000000 */
+	context.globalAlpha = 0.0;
+	context.lineWidth = 0;
+/* updateBrush(): style:1color:#d4d0c8 */ 
+	context.fillStyle = "#d4d0c8";
+	context.globalAlpha = 1;
+	context.font = " 8pt 'MS Shell Dlg 2'";
+/* drawPath(): boundingRect: */
+	context.beginPath();
+		context.moveTo(0.5, 0.5);
+		context.lineTo(400.5, 0.5);
+		context.lineTo(400.5, 300.5);
+		context.lineTo(0.5, 300.5);
+		context.lineTo(0.5, 0.5);
+	context.fill();
+	context.restore();
+	context.save()
+	context.restore();
+	context.save()
+/* updatePen(): width:0 style:1 color:#000000 */
+	context.strokeStyle = "#000000";
+	context.lineWidth = 0;
+	context.globalAlpha = 1;
+/* updateBrush(): style:0color:#000000 */ 
+	context.fillStyle = "#000000";
+	context.globalAlpha = 1;
+	context.font = " 8pt 'MS Shell Dlg 2'";
+	context.setTransform(1, 0, 0, 1, 11, 25);
+	context.rect(0, 0, 378, 219);
+	context.clip();
+/* updatePen(): width:0 style:1 color:#808080 */
+	context.strokeStyle = "#808080";
+	context.lineWidth = 0;
+	context.globalAlpha = 1;
+/* drawPath(): boundingRect: */
+	context.beginPath();
+		context.moveTo(0.5, 6.5);
+		context.lineTo(376.5, 6.5);
+		context.lineTo(376.5, 217.5);
+		context.lineTo(0.5, 217.5);
+		context.lineTo(0.5, 6.5);
+	context.stroke();
+/* updatePen(): width:0 style:1 color:#ffffff */
+	context.strokeStyle = "#ffffff";
+	context.lineWidth = 0;
+	context.globalAlpha = 1;
+/* drawPolygon(): size:2 mode:3 */
+	context.beginPath();
+		context.moveTo(1.5, 7.5);
+		context.lineTo(375.5, 7.5);
+	context.stroke();
+/* drawPolygon(): size:2 mode:3 */
+	context.beginPath();
+		context.moveTo(1.5, 8.5);
+		context.lineTo(1.5, 216.5);
+	context.stroke();
+/* drawPolygon(): size:2 mode:3 */
+	context.beginPath();
+		context.moveTo(0.5, 218.5);
+		context.lineTo(377.5, 218.5);
+	context.stroke();
+/* drawPolygon(): size:2 mode:3 */
+	context.beginPath();
+		context.moveTo(377.5, 6.5);
+		context.lineTo(377.5, 217.5);
+	context.stroke();
+/* updatePen(): width:0 style:1 color:#000000 */
+	context.strokeStyle = "#000000";
+	context.lineWidth = 0;
+	context.globalAlpha = 1;
+/* drawTextItem():9.5,11 text:GroupBox */
+	context.fillStyle = "#d4d0c8";
+	context.fillRect(10, -1.5, 47, 13);
+	context.fillStyle = "#000000";
+	context.fillText("GroupBox",   10, 11.5);
+	context.restore();
+	context.save()
+/* updatePen(): width:0 style:1 color:#ffffff */
+	context.strokeStyle = "#ffffff";
+	context.lineWidth = 0;
+	context.globalAlpha = 1;
+/* updateBrush(): style:0color:#000000 */ 
+	context.fillStyle = "#000000";
+	context.globalAlpha = 1;
+	context.font = " 8pt 'MS Shell Dlg 2'";
+	context.setTransform(1, 0, 0, 1, 24, 67);
+/* drawPolygon(): size:3 mode:3 */
+	context.beginPath();
+		context.moveTo(0.5, 17.5);
+		context.lineTo(0.5, 0.5);
+		context.lineTo(23.5, 0.5);
+	context.stroke();
+/* updatePen(): width:0 style:1 color:#404040 */
+	context.strokeStyle = "#404040";
+	context.lineWidth = 0;
+	context.globalAlpha = 1;
+/* drawPolygon(): size:3 mode:3 */
+	context.beginPath();
+		context.moveTo(0.5, 18.5);
+		context.lineTo(24.5, 18.5);
+		context.lineTo(24.5, 0.5);
+	context.stroke();
+/* updatePen(): width:0 style:1 color:#d4d0c8 */
+	context.strokeStyle = "#d4d0c8";
+	context.lineWidth = 0;
+	context.globalAlpha = 1;
+/* drawPolygon(): size:3 mode:3 */
+	context.beginPath();
+		context.moveTo(1.5, 16.5);
+		context.lineTo(1.5, 1.5);
+		context.lineTo(22.5, 1.5);
+	context.stroke();
+/* updatePen(): width:0 style:1 color:#808080 */
+	context.strokeStyle = "#808080";
+	context.lineWidth = 0;
+	context.globalAlpha = 1;
+/* drawPolygon(): size:3 mode:3 */
+	context.beginPath();
+		context.moveTo(1.5, 17.5);
+		context.lineTo(23.5, 17.5);
+		context.lineTo(23.5, 1.5);
+	context.stroke();
+/* updatePen(): width:0 style:0 color:#000000 */
+	context.globalAlpha = 0.0;
+	context.lineWidth = 0;
+/* updateBrush(): style:1color:#d4d0c8 */ 
+	context.fillStyle = "#d4d0c8";
+	context.globalAlpha = 1;
+/* drawPath(): boundingRect: */
+	context.beginPath();
+		context.moveTo(2.5, 2.5);
+		context.lineTo(23.5, 2.5);
+		context.lineTo(23.5, 17.5);
+		context.lineTo(2.5, 17.5);
+		context.lineTo(2.5, 2.5);
+	context.fill();
+/* updatePen(): width:0 style:1 color:#000000 */
+	context.strokeStyle = "#000000";
+	context.lineWidth = 0;
+	context.globalAlpha = 1;
+/* updateBrush(): style:0color:#000000 */ 
+	context.fillStyle = "#000000";
+	context.globalAlpha = 1;
+	context.font = " 8pt 'MS Shell Dlg 2'";
+/* drawTextItem():6.5,14 text:... */
+	context.fillStyle = "#d4d0c8";
+	context.fillRect(7, 1.5, 12, 13);
+	context.fillStyle = "#000000";
+	context.fillText("...",   7, 14.5);
+	context.restore();
+	context.save()
+/* updatePen(): width:0 style:1 color:#000000 */
+	context.strokeStyle = "#000000";
+	context.lineWidth = 0;
+	context.globalAlpha = 1;
+/* updateBrush(): style:0color:#000000 */ 
+	context.fillStyle = "#000000";
+	context.globalAlpha = 1;
+	context.font = " 8pt 'MS Shell Dlg 2'";
+	context.setTransform(1, 0, 0, 1, 24, 108);
+/* updatePen(): width:0 style:1 color:#808080 */
+	context.strokeStyle = "#808080";
+	context.lineWidth = 0;
+	context.globalAlpha = 1;
+/* drawPolygon(): size:3 mode:3 */
+	context.beginPath();
+		context.moveTo(0.5, 13.5);
+		context.lineTo(0.5, 2.5);
+		context.lineTo(11.5, 2.5);
+	context.stroke();
+/* updatePen(): width:0 style:1 color:#ffffff */
+	context.strokeStyle = "#ffffff";
+	context.lineWidth = 0;
+	context.globalAlpha = 1;
+/* drawPolygon(): size:3 mode:3 */
+	context.beginPath();
+		context.moveTo(0.5, 14.5);
+		context.lineTo(12.5, 14.5);
+		context.lineTo(12.5, 2.5);
+	context.stroke();
+/* updatePen(): width:0 style:1 color:#404040 */
+	context.strokeStyle = "#404040";
+	context.lineWidth = 0;
+	context.globalAlpha = 1;
+/* drawPolygon(): size:3 mode:3 */
+	context.beginPath();
+		context.moveTo(1.5, 12.5);
+		context.lineTo(1.5, 3.5);
+		context.lineTo(10.5, 3.5);
+	context.stroke();
+/* updatePen(): width:0 style:1 color:#eae5dc */
+	context.strokeStyle = "#eae5dc";
+	context.lineWidth = 0;
+	context.globalAlpha = 1;
+/* drawPolygon(): size:3 mode:3 */
+	context.beginPath();
+		context.moveTo(1.5, 13.5);
+		context.lineTo(11.5, 13.5);
+		context.lineTo(11.5, 3.5);
+	context.stroke();
+/* updatePen(): width:0 style:0 color:#000000 */
+	context.globalAlpha = 0.0;
+	context.lineWidth = 0;
+/* updateBrush(): style:1color:#ffffff */ 
+	context.fillStyle = "#ffffff";
+	context.globalAlpha = 1;
+/* drawPath(): boundingRect: */
+	context.beginPath();
+		context.moveTo(2.5, 4.5);
+		context.lineTo(11.5, 4.5);
+		context.lineTo(11.5, 13.5);
+		context.lineTo(2.5, 13.5);
+		context.lineTo(2.5, 4.5);
+	context.fill();
+/* updatePen(): width:0 style:1 color:#000000 */
+	context.strokeStyle = "#000000";
+	context.lineWidth = 0;
+	context.globalAlpha = 1;
+/* updateBrush(): style:0color:#000000 */ 
+	context.fillStyle = "#000000";
+	context.globalAlpha = 1;
+/* drawTextItem():18,13 text:CheckBox */
+	context.fillStyle = "#d4d0c8";
+	context.fillRect(18.5, 0.5, 47, 13);
+	context.fillStyle = "#000000";
+	context.fillText("CheckBox",   18.5, 13.5);
+	context.restore();
+	context.save()
+/* updatePen(): width:0 style:1 color:#000000 */
+	context.strokeStyle = "#000000";
+	context.lineWidth = 0;
+	context.globalAlpha = 1;
+/* updateBrush(): style:0color:#000000 */ 
+	context.fillStyle = "#000000";
+	context.globalAlpha = 1;
+	context.font = " 8pt 'MS Shell Dlg 2'";
+	context.setTransform(1, 0, 0, 1, 24, 148);
+/* updatePen(): width:0 style:1 color:#808080 */
+	context.strokeStyle = "#808080";
+	context.lineWidth = 0;
+	context.globalAlpha = 1;
+	context.setTransform(1, 0, 0, 1, 24, 151);
+/* drawPolygon(): size:12 mode:3 */
+	context.beginPath();
+		context.moveTo(1.5, 9.5);
+		context.lineTo(1.5, 8.5);
+		context.lineTo(0.5, 7.5);
+		context.lineTo(0.5, 4.5);
+		context.lineTo(1.5, 3.5);
+		context.lineTo(1.5, 2.5);
+		context.lineTo(2.5, 1.5);
+		context.lineTo(3.5, 1.5);
+		context.lineTo(4.5, 0.5);
+		context.lineTo(7.5, 0.5);
+		context.lineTo(8.5, 1.5);
+		context.lineTo(9.5, 1.5);
+	context.stroke();
+/* updatePen(): width:0 style:1 color:#404040 */
+	context.strokeStyle = "#404040";
+	context.lineWidth = 0;
+	context.globalAlpha = 1;
+/* drawPolygon(): size:10 mode:3 */
+	context.beginPath();
+		context.moveTo(2.5, 8.5);
+		context.lineTo(1.5, 7.5);
+		context.lineTo(1.5, 4.5);
+		context.lineTo(2.5, 3.5);
+		context.lineTo(2.5, 2.5);
+		context.lineTo(3.5, 2.5);
+		context.lineTo(4.5, 1.5);
+		context.lineTo(7.5, 1.5);
+		context.lineTo(8.5, 2.5);
+		context.lineTo(9.5, 2.5);
+	context.stroke();
+/* updatePen(): width:0 style:1 color:#eae5dc */
+	context.strokeStyle = "#eae5dc";
+	context.lineWidth = 0;
+	context.globalAlpha = 1;
+/* drawPolygon(): size:10 mode:3 */
+	context.beginPath();
+		context.moveTo(2.5, 9.5);
+		context.lineTo(3.5, 9.5);
+		context.lineTo(4.5, 10.5);
+		context.lineTo(7.5, 10.5);
+		context.lineTo(8.5, 9.5);
+		context.lineTo(9.5, 9.5);
+		context.lineTo(9.5, 8.5);
+		context.lineTo(10.5, 7.5);
+		context.lineTo(10.5, 4.5);
+		context.lineTo(9.5, 3.5);
+	context.stroke();
+/* updatePen(): width:0 style:1 color:#ffffff */
+	context.strokeStyle = "#ffffff";
+	context.lineWidth = 0;
+	context.globalAlpha = 1;
+/* drawPolygon(): size:12 mode:3 */
+	context.beginPath();
+		context.moveTo(2.5, 10.5);
+		context.lineTo(3.5, 10.5);
+		context.lineTo(4.5, 11.5);
+		context.lineTo(7.5, 11.5);
+		context.lineTo(8.5, 10.5);
+		context.lineTo(9.5, 10.5);
+		context.lineTo(10.5, 9.5);
+		context.lineTo(10.5, 8.5);
+		context.lineTo(11.5, 7.5);
+		context.lineTo(11.5, 4.5);
+		context.lineTo(10.5, 3.5);
+		context.lineTo(10.5, 2.5);
+	context.stroke();
+/* updateBrush(): style:1color:#ffffff */ 
+	context.fillStyle = "#ffffff";
+	context.globalAlpha = 1;
+/* drawPolygon(): size:8 mode:0 */
+	context.beginPath();
+		context.moveTo(4.5, 2.5);
+		context.lineTo(7.5, 2.5);
+		context.lineTo(9.5, 4.5);
+		context.lineTo(9.5, 7.5);
+		context.lineTo(7.5, 9.5);
+		context.lineTo(4.5, 9.5);
+		context.lineTo(2.5, 7.5);
+		context.lineTo(2.5, 4.5);
+	context.fill();
+	context.stroke();
+/* updatePen(): width:0 style:1 color:#000000 */
+	context.strokeStyle = "#000000";
+	context.lineWidth = 0;
+	context.globalAlpha = 1;
+/* updateBrush(): style:0color:#000000 */ 
+	context.fillStyle = "#000000";
+	context.globalAlpha = 1;
+	context.setTransform(1, 0, 0, 1, 24, 148);
+/* drawTextItem():18,13 text:RadioButton */
+	context.fillStyle = "#d4d0c8";
+	context.fillRect(18.5, 0.5, 59, 13);
+	context.fillStyle = "#000000";
+	context.fillText("RadioButton",   18.5, 13.5);
+	context.restore();
+	context.save()
+/* updatePen(): width:0 style:1 color:#ffffff */
+	context.strokeStyle = "#ffffff";
+	context.lineWidth = 0;
+	context.globalAlpha = 1;
+/* updateBrush(): style:0color:#000000 */ 
+	context.fillStyle = "#000000";
+	context.globalAlpha = 1;
+	context.font = " 8pt 'MS Shell Dlg 2'";
+	context.setTransform(1, 0, 0, 1, 24, 188);
+/* drawPolygon(): size:3 mode:3 */
+	context.beginPath();
+		context.moveTo(0.5, 21.5);
+		context.lineTo(0.5, 0.5);
+		context.lineTo(350.5, 0.5);
+	context.stroke();
+/* updatePen(): width:0 style:1 color:#404040 */
+	context.strokeStyle = "#404040";
+	context.lineWidth = 0;
+	context.globalAlpha = 1;
+/* drawPolygon(): size:3 mode:3 */
+	context.beginPath();
+		context.moveTo(0.5, 22.5);
+		context.lineTo(351.5, 22.5);
+		context.lineTo(351.5, 0.5);
+	context.stroke();
+/* updatePen(): width:0 style:1 color:#d4d0c8 */
+	context.strokeStyle = "#d4d0c8";
+	context.lineWidth = 0;
+	context.globalAlpha = 1;
+/* drawPolygon(): size:3 mode:3 */
+	context.beginPath();
+		context.moveTo(1.5, 20.5);
+		context.lineTo(1.5, 1.5);
+		context.lineTo(349.5, 1.5);
+	context.stroke();
+/* updatePen(): width:0 style:1 color:#808080 */
+	context.strokeStyle = "#808080";
+	context.lineWidth = 0;
+	context.globalAlpha = 1;
+/* drawPolygon(): size:3 mode:3 */
+	context.beginPath();
+		context.moveTo(1.5, 21.5);
+		context.lineTo(350.5, 21.5);
+		context.lineTo(350.5, 1.5);
+	context.stroke();
+/* updatePen(): width:0 style:0 color:#000000 */
+	context.globalAlpha = 0.0;
+	context.lineWidth = 0;
+/* updateBrush(): style:1color:#d4d0c8 */ 
+	context.fillStyle = "#d4d0c8";
+	context.globalAlpha = 1;
+/* drawPath(): boundingRect: */
+	context.beginPath();
+		context.moveTo(2.5, 2.5);
+		context.lineTo(350.5, 2.5);
+		context.lineTo(350.5, 21.5);
+		context.lineTo(2.5, 21.5);
+		context.lineTo(2.5, 2.5);
+	context.fill();
+/* updatePen(): width:0 style:1 color:#000000 */
+	context.strokeStyle = "#000000";
+	context.lineWidth = 0;
+	context.globalAlpha = 1;
+/* updateBrush(): style:0color:#000000 */ 
+	context.fillStyle = "#000000";
+	context.globalAlpha = 1;
+/* drawTextItem():148.5,16 text:PushButton */
+	context.fillStyle = "#d4d0c8";
+	context.fillRect(149, 3.5, 55, 13);
+	context.fillStyle = "#000000";
+	context.fillText("PushButton",   149, 16.5);
+	context.restore();
+	context.save()
+/* updatePen(): width:0 style:1 color:#808080 */
+	context.strokeStyle = "#808080";
+	context.lineWidth = 0;
+	context.globalAlpha = 1;
+/* updateBrush(): style:0color:#000000 */ 
+	context.fillStyle = "#000000";
+	context.globalAlpha = 1;
+	context.font = " 8pt 'MS Shell Dlg 2'";
+	context.setTransform(1, 0, 0, 1, 11, 250);
+/* drawPolygon(): size:2 mode:3 */
+	context.beginPath();
+		context.moveTo(0.5, 0.5);
+		context.lineTo(341.5, 0.5);
+	context.stroke();
+/* drawPolygon(): size:2 mode:3 */
+	context.beginPath();
+		context.moveTo(0.5, 19.5);
+		context.lineTo(0.5, 1.5);
+	context.stroke();
+/* updatePen(): width:0 style:1 color:#ffffff */
+	context.strokeStyle = "#ffffff";
+	context.lineWidth = 0;
+	context.globalAlpha = 1;
+/* drawPolygon(): size:2 mode:3 */
+	context.beginPath();
+		context.moveTo(0.5, 20.5);
+		context.lineTo(342.5, 20.5);
+	context.stroke();
+/* drawPolygon(): size:2 mode:3 */
+	context.beginPath();
+		context.moveTo(342.5, 0.5);
+		context.lineTo(342.5, 19.5);
+	context.stroke();
+/* updatePen(): width:0 style:0 color:#000000 */
+	context.globalAlpha = 0.0;
+	context.lineWidth = 0;
+/* updateBrush(): style:1color:#d4d0c8 */ 
+	context.fillStyle = "#d4d0c8";
+	context.globalAlpha = 1;
+/* drawPath(): boundingRect: */
+	context.beginPath();
+		context.moveTo(1.5, 1.5);
+		context.lineTo(342.5, 1.5);
+		context.lineTo(342.5, 20.5);
+		context.lineTo(1.5, 20.5);
+		context.lineTo(1.5, 1.5);
+	context.fill();
+/* updatePen(): width:0 style:0 color:#000000 */
+	context.globalAlpha = 0.0;
+	context.lineWidth = 0;
+/* updateBrush(): style:1color:#0a246a */ 
+	context.fillStyle = "#0a246a";
+	context.globalAlpha = 1;
+/* drawPath(): boundingRect: */
+	context.beginPath();
+		context.moveTo(3.5, 3.5);
+		context.lineTo(10.5, 3.5);
+		context.lineTo(10.5, 18.5);
+		context.lineTo(3.5, 18.5);
+		context.lineTo(3.5, 3.5);
+	context.fill();
+/* updatePen(): width:0 style:0 color:#000000 */
+	context.globalAlpha = 0.0;
+	context.lineWidth = 0;
+/* updateBrush(): style:1color:#0a246a */ 
+	context.fillStyle = "#0a246a";
+	context.globalAlpha = 1;
+/* drawPath(): boundingRect: */
+	context.beginPath();
+		context.moveTo(12.5, 3.5);
+		context.lineTo(19.5, 3.5);
+		context.lineTo(19.5, 18.5);
+		context.lineTo(12.5, 18.5);
+		context.lineTo(12.5, 3.5);
+	context.fill();
+/* updatePen(): width:0 style:0 color:#000000 */
+	context.globalAlpha = 0.0;
+	context.lineWidth = 0;
+/* updateBrush(): style:1color:#0a246a */ 
+	context.fillStyle = "#0a246a";
+	context.globalAlpha = 1;
+/* drawPath(): boundingRect: */
+	context.beginPath();
+		context.moveTo(21.5, 3.5);
+		context.lineTo(28.5, 3.5);
+		context.lineTo(28.5, 18.5);
+		context.lineTo(21.5, 18.5);
+		context.lineTo(21.5, 3.5);
+	context.fill();
+/* updatePen(): width:0 style:0 color:#000000 */
+	context.globalAlpha = 0.0;
+	context.lineWidth = 0;
+/* updateBrush(): style:1color:#0a246a */ 
+	context.fillStyle = "#0a246a";
+	context.globalAlpha = 1;
+/* drawPath(): boundingRect: */
+	context.beginPath();
+		context.moveTo(30.5, 3.5);
+		context.lineTo(37.5, 3.5);
+		context.lineTo(37.5, 18.5);
+		context.lineTo(30.5, 18.5);
+		context.lineTo(30.5, 3.5);
+	context.fill();
+/* updatePen(): width:0 style:0 color:#000000 */
+	context.globalAlpha = 0.0;
+	context.lineWidth = 0;
+/* updateBrush(): style:1color:#0a246a */ 
+	context.fillStyle = "#0a246a";
+	context.globalAlpha = 1;
+/* drawPath(): boundingRect: */
+	context.beginPath();
+		context.moveTo(39.5, 3.5);
+		context.lineTo(46.5, 3.5);
+		context.lineTo(46.5, 18.5);
+		context.lineTo(39.5, 18.5);
+		context.lineTo(39.5, 3.5);
+	context.fill();
+/* updatePen(): width:0 style:0 color:#000000 */
+	context.globalAlpha = 0.0;
+	context.lineWidth = 0;
+/* updateBrush(): style:1color:#0a246a */ 
+	context.fillStyle = "#0a246a";
+	context.globalAlpha = 1;
+/* drawPath(): boundingRect: */
+	context.beginPath();
+		context.moveTo(48.5, 3.5);
+		context.lineTo(55.5, 3.5);
+		context.lineTo(55.5, 18.5);
+		context.lineTo(48.5, 18.5);
+		context.lineTo(48.5, 3.5);
+	context.fill();
+/* updatePen(): width:0 style:0 color:#000000 */
+	context.globalAlpha = 0.0;
+	context.lineWidth = 0;
+/* updateBrush(): style:1color:#0a246a */ 
+	context.fillStyle = "#0a246a";
+	context.globalAlpha = 1;
+/* drawPath(): boundingRect: */
+	context.beginPath();
+		context.moveTo(57.5, 3.5);
+		context.lineTo(64.5, 3.5);
+		context.lineTo(64.5, 18.5);
+		context.lineTo(57.5, 18.5);
+		context.lineTo(57.5, 3.5);
+	context.fill();
+/* updatePen(): width:0 style:0 color:#000000 */
+	context.globalAlpha = 0.0;
+	context.lineWidth = 0;
+/* updateBrush(): style:1color:#0a246a */ 
+	context.fillStyle = "#0a246a";
+	context.globalAlpha = 1;
+/* drawPath(): boundingRect: */
+	context.beginPath();
+		context.moveTo(66.5, 3.5);
+		context.lineTo(73.5, 3.5);
+		context.lineTo(73.5, 18.5);
+		context.lineTo(66.5, 18.5);
+		context.lineTo(66.5, 3.5);
+	context.fill();
+/* updatePen(): width:0 style:0 color:#000000 */
+	context.globalAlpha = 0.0;
+	context.lineWidth = 0;
+/* updateBrush(): style:1color:#0a246a */ 
+	context.fillStyle = "#0a246a";
+	context.globalAlpha = 1;
+/* drawPath(): boundingRect: */
+	context.beginPath();
+		context.moveTo(75.5, 3.5);
+		context.lineTo(82.5, 3.5);
+		context.lineTo(82.5, 18.5);
+		context.lineTo(75.5, 18.5);
+		context.lineTo(75.5, 3.5);
+	context.fill();
+/* updatePen(): width:0 style:1 color:#000000 */
+	context.strokeStyle = "#000000";
+	context.lineWidth = 0;
+	context.globalAlpha = 1;
+/* updateBrush(): style:0color:#000000 */ 
+	context.fillStyle = "#000000";
+	context.globalAlpha = 1;
+/* drawTextItem():348.5,15 text:24% */
+	context.fillStyle = "#d4d0c8";
+	context.fillRect(349, 2.5, 23, 13);
+	context.fillStyle = "#000000";
+	context.fillText("24%",   349, 15.5);
+	context.restore();
+	context.save()
+/* updatePen(): width:0 style:1 color:#ffffff */
+	context.strokeStyle = "#ffffff";
+	context.lineWidth = 0;
+	context.globalAlpha = 1;
+/* updateBrush(): style:0color:#000000 */ 
+	context.fillStyle = "#000000";
+	context.globalAlpha = 1;
+	context.font = " 8pt 'MS Shell Dlg 2'";
+/* drawPolygon(): size:2 mode:3 */
+	context.beginPath();
+		context.moveTo(0.5, 0.5);
+		context.lineTo(399.5, 0.5);
+	context.stroke();
+/* updatePen(): width:0 style:1 color:#808080 */
+	context.strokeStyle = "#808080";
+	context.lineWidth = 0;
+	context.globalAlpha = 1;
+/* drawPolygon(): size:2 mode:3 */
+	context.beginPath();
+		context.moveTo(0.5, 13.5);
+		context.lineTo(399.5, 13.5);
+	context.stroke();
+/* updatePen(): width:0 style:1 color:#ffffff */
+	context.strokeStyle = "#ffffff";
+	context.lineWidth = 0;
+	context.globalAlpha = 1;
+	context.setTransform(1, 0, 0, 1, 2, 2);
+/* drawPolygon(): size:2 mode:3 */
+	context.beginPath();
+		context.moveTo(1.5, 2.5);
+		context.lineTo(2.5, 2.5);
+	context.stroke();
+/* drawPolygon(): size:2 mode:3 */
+	context.beginPath();
+		context.moveTo(1.5, 6.5);
+		context.lineTo(1.5, 3.5);
+	context.stroke();
+/* updatePen(): width:0 style:1 color:#808080 */
+	context.strokeStyle = "#808080";
+	context.lineWidth = 0;
+	context.globalAlpha = 1;
+/* drawPolygon(): size:2 mode:3 */
+	context.beginPath();
+		context.moveTo(1.5, 7.5);
+		context.lineTo(3.5, 7.5);
+	context.stroke();
+/* drawPolygon(): size:2 mode:3 */
+	context.beginPath();
+		context.moveTo(3.5, 2.5);
+		context.lineTo(3.5, 6.5);
+	context.stroke();
+/* updatePen(): width:0 style:1 color:#ffffff */
+	context.strokeStyle = "#ffffff";
+	context.lineWidth = 0;
+	context.globalAlpha = 1;
+/* drawPolygon(): size:2 mode:3 */
+	context.beginPath();
+		context.moveTo(4.5, 2.5);
+		context.lineTo(5.5, 2.5);
+	context.stroke();
+/* drawPolygon(): size:2 mode:3 */
+	context.beginPath();
+		context.moveTo(4.5, 6.5);
+		context.lineTo(4.5, 3.5);
+	context.stroke();
+/* updatePen(): width:0 style:1 color:#808080 */
+	context.strokeStyle = "#808080";
+	context.lineWidth = 0;
+	context.globalAlpha = 1;
+/* drawPolygon(): size:2 mode:3 */
+	context.beginPath();
+		context.moveTo(4.5, 7.5);
+		context.lineTo(6.5, 7.5);
+	context.stroke();
+/* drawPolygon(): size:2 mode:3 */
+	context.beginPath();
+		context.moveTo(6.5, 2.5);
+		context.lineTo(6.5, 6.5);
+	context.stroke();
+/* updatePen(): width:0 style:1 color:#808080 */
+	context.strokeStyle = "#808080";
+	context.lineWidth = 0;
+	context.globalAlpha = 1;
+	context.setTransform(1, 0, 0, 1, 0, 0);
+	context.restore();
+	context.save()
+	context.restore();
+}</SCRIPT>
