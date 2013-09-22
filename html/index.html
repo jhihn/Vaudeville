@@ -21,6 +21,10 @@
                 	function setupCanvas() {
                 		canvas = document.getElementById("qt");
         				context = canvas.getContext('2d');
+
+                        $(canvas).click(function(evt) {
+                            $.post('events/click', { x: evt.offsetX, y: evt.offsetY});
+                        })
                 	}
 
                 	function clearCanvas() {
