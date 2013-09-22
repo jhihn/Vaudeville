@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>someapp.exe</title>
+                <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+        </head>
+        <body>
+                <canvas id="qt" width="1024" height="768"></canvas>
+
+                <script>
+                	var canvas;
+                	var context;
+
+                	$(function() {
+                		setupCanvas();
+                		clearCanvas();
+
+            			poll();
+                	});
+
+                	function setupCanvas() {
+                		canvas = document.getElementById("qt");
+        				context = canvas.getContext('2d');
+                	}
+
+                	function clearCanvas() {
+                		context.shadowBlur=0;
+				        context.fillStyle = "#000000";
+				        context.globalAlpha = 1;
+				        context.fillStyle = "#d6d6d6";
+				        context.fillRect(0, 0, 400, 300);
+                	}
+
+                	function poll() {
+                		$.getScript('drawUpdates.js', function(script, textStatus, xhr) {
+
+                		})
+                		.done(function(script, textStatus) {
+                			setTimeout(poll, 1000);
+                		});
+                	}
+                </script>
+        </body>
+</html>
